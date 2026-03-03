@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django
+db.sqlite3
+*.sqlite3
+*.log
+media/
+staticfiles/
+local_settings.py
+settings_local.py
+
+# Environment / virtualenv
+.env
+.env.*
+venv/
+env/
+.venv/
+pip-wheel-metadata/
+venv.bak/
+
+# Byte-compiled / caches
+.mypy_cache/
+.pytest_cache/
+.cache/
+htmlcov/
+coverage.xml
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Test and debug
+.tox/
+coverage/
+
+# Logs
+*.log
+logs/
+
+# Node (if any front-end tooling present in backend)
+node_modules/
+
+# Django migrations cache files
+**/migrations/__pycache__/
+**/migrations/*.pyc
+
+# Celery
+celerybeat-schedule
+/venv
+pyvenv.cfg

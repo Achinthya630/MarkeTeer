@@ -1,6 +1,19 @@
 import Button from "../ui/Button";
+import { useEffect } from "react";
+import axios from "axios";
 
 const Hero = () => {
+
+    useEffect(() => {
+    axios.get("http://127.0.0.1:8000/api/test/")
+      .then(response => {
+        console.log(response.data);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  }, []);
+
   return (
     <section className="hero">
       <div className="blob"></div>
