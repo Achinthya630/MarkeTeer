@@ -36,11 +36,16 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.logo-link{
+  text-decoration: none;
+}
+
 .nav-links {
   display: flex;
   gap: 30px;
   list-style: none;
   align-items: center;
+  
 }
 
 .nav-links li {
@@ -48,10 +53,20 @@ body {
   font-size: 14px;
   color: #cfcfe8;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .nav-links li:hover {
   color: white;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: white;
+}
+
+.navBar-button{
+  text-decoration: none;
 }
 
 /* Button */
@@ -469,3 +484,5 @@ html {
     width: 100%;
   }
 }
+
+

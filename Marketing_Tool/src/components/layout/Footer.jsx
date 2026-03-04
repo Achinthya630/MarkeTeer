@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-top">
           {/* Brand Section */}
           <div className="footer-brand">
-            <h3 className="footer-logo">MarkeTeer</h3>
+            <h3 className="footer-logo">Margroms</h3>
             <p>
               AI-powered marketing automation to help modern
               businesses scale faster and smarter.
@@ -54,7 +54,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>© 2026 MarkeTeer. All rights reserved.</p>
+          <p>© 2026 Margorms. All rights reserved.</p>
 
           <div className="social-icons">
             <span>Twitter</span>
