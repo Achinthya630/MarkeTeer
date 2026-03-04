@@ -33,6 +33,7 @@ body {
   font-weight: 700;
   background: linear-gradient(90deg, #8f5bff, #6c63ff);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -103,6 +104,7 @@ body {
   line-height: 1.2;
   background: linear-gradient(90deg, #ffffff, #b3b3ff);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -298,6 +300,7 @@ html {
 .cta-card h2 span {
   background: linear-gradient(90deg, #8f5bff, #6c63ff);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -383,6 +386,7 @@ html {
   font-weight: 700;
   background: linear-gradient(90deg, #8f5bff, #6c63ff);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 15px;
 }

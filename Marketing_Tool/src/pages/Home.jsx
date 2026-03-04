@@ -12,7 +12,7 @@ const Home = () => {
     <>
       <Navbar />
       <Hero />
-      <TrustedBy />
+      {/* <TrustedBy /> */}
       <Features />
       <DashboardPreview />
       <Pricing />
