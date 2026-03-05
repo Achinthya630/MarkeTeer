@@ -24,7 +24,9 @@ const Login = () => {
               <input type="password" placeholder="Your password" />
             </label>
 
-            <Button variant="primary">Log In</Button>
+            <Button to="http://localhost:3039" variant="primary">
+              Log In
+            </Button>
           </form>
 
           <p className="auth-footer">
