@@ -42,6 +42,21 @@ export function AccountPopover({ data = [], sx, ...other }: AccountPopoverProps)
     setOpenPopover(null);
   }, []);
 
+  const handleLogout = useCallback(() => {
+    // clear any tokens stored in this origin
+    try {
+      localStorage.removeItem('access_token');
+      localStorage.removeItem('refresh_token');
+    } catch (e) {
+      // ignore
+    }
+
+    handleClosePopover();
+
+    // redirect back to the frontend login page
+    window.location.href = 'http://localhost:5173/login';
+  }, [handleClosePopover]);
+
   const handleClickItem = useCallback(
     (path: string) => {
       handleClosePopover();
@@ -129,7 +144,7 @@ export function AccountPopover({ data = [], sx, ...other }: AccountPopoverProps)
         <Divider sx={{ borderStyle: 'dashed' }} />
 
         <Box sx={{ p: 1 }}>
-          <Button fullWidth color="error" size="medium" variant="text">
+          <Button fullWidth color="error" size="medium" variant="text" onClick={handleLogout}>
             Logout
           </Button>
         </Box>
